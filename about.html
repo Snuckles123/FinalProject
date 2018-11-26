@@ -9,13 +9,16 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/about.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="js/script.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/script.js"></script>
 	<script src="js/validate.js"></script>
+  <script src="js/about.js"></script>
 </head>
 <body>
 
@@ -53,80 +56,9 @@
     </div>
 </nav>
 
-<div id="gallery" class="container" data-js="filtering-demo">
-  <h1>Gallery</h1>
-  <div id="filters" class="button-group filter-button-group">
-    <button class="btn btn-primary" data-filter="*">All</button>
-    <button class="btn btn-primary" data-filter=".rooms">Rooms</button>
-    <button class="btn btn-primary" data-filter=".resort">The Resort</button>
-    <button class="btn btn-primary" data-filter=".amenities">Amenities</button>
-  </div>
-  <div class="container-fluid no-gutter">
-    <div id="posts" class="row">
-      <div id="1" class="item web col-sm-4 col-md-2 resort">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-resort2.png">
-        </div>
-      </div>
-      <div id="2" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room2.png">
-        </div>
-      </div>
-      <div id="3" class="item web col-sm-4 col-md-2 amenities">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-amenities1.jpg">
-        </div>
-      </div>
-      <div id="4" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room4.png">
-        </div>
-      </div>
-      <div id="5" class="item web col-sm-4 col-md-2 resort">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-resort4.png">
-        </div>
-      </div>
-      <div id="6" class="item web col-sm-4 col-md-2 resort">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-resort1.png">
-        </div>
-      </div>
-      <div id="7" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room1.png">
-        </div>
-      </div>
-      <div id="8" class="item web col-sm-4 col-md-2 resort">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-resort3.png">
-        </div>
-      </div>
-      <div id="9" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room5.png">
-        </div>
-      </div>
-      <div id="10" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room3.png">
-        </div>
-      </div>
-      <div id="11" class="item web col-sm-4 col-md-2 amenities">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-amenities4.jpg">
-        </div>
-      </div>
-      <div id="12" class="item web col-sm-4 col-md-2 amenities">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-amenities3.jpg">
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/aboutbanner.jpg">
+  <h1>About Us</h1>
 </div>
-
 
 <div id="login-form" class="form-modal modal">
   <form class="modal-content animate" action="#">

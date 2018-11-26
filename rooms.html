@@ -8,14 +8,17 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/rooms.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
 	<script src="js/script.js"></script>
 	<script src="js/validate.js"></script>
+  <script src="js/rooms.js"></script>
 </head>
 <body>
 
@@ -38,9 +41,9 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="#">Rooms</a></li>
             <li><a href="amenities.html">Amenities</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <button class="btn btn-info navbar-btn">BOOK NOW</button>
@@ -53,76 +56,125 @@
     </div>
 </nav>
 
-<div id="gallery" class="container" data-js="filtering-demo">
-  <h1>Gallery</h1>
-  <div id="filters" class="button-group filter-button-group">
-    <button class="btn btn-primary" data-filter="*">All</button>
-    <button class="btn btn-primary" data-filter=".rooms">Rooms</button>
-    <button class="btn btn-primary" data-filter=".resort">The Resort</button>
-    <button class="btn btn-primary" data-filter=".amenities">Amenities</button>
+<div id="rooms" class="container-fluid">
+  <h1>Rooms and Suites</h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Superior Room</h2>
+      <p>Guests enjoy verdant gardens or bay views. Superior Rooms are sensibly designed with indigenous materials, from sawali ceilings down to our accent lighting made from ratan.</p>
+    </div>
+    <div class="col-sm-6">
+      <div id="carouselSuperior" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselSuperior" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselSuperior" data-slide-to="1"></li>
+          <li data-target="#carouselSuperior" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/room-superior1.jpg">
+          </div>
+          <div class="item">
+            <img src="img/room-superior2.jpg">
+          </div>
+          <div class="item">
+            <img src="img/room-superior3.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container-fluid no-gutter">
-    <div id="posts" class="row">
-      <div id="1" class="item web col-sm-4 col-md-2 resort">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-resort2.png">
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="carouselDeluxe" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselDeluxe" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselDeluxe" data-slide-to="1"></li>
+          <li data-target="#carouselDeluxe" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/room-deluxe1.jpg">
+          </div>
+          <div class="item">
+            <img src="img/room-deluxe2.jpg">
+          </div>
+          <div class="item">
+            <img src="img/room-deluxe3.jpg">
+          </div>
         </div>
       </div>
-      <div id="2" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room2.png">
+    </div>
+    <div class="col-sm-6">
+      <h2>Deluxe Room</h2>
+      <p>Deluxe rooms offer a more private relaxation with your own personal veranda. They are modernly designed with indigenous materials, from Vigan tile floors to our accent lighting made from rattan.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Poolside Room</h2>
+      <p>Our Poolside is recommended for family and small groups who loves to be near the sun. It can accommodate 8 to 10 persons. It has all the basic amenities, from T.V., toilet, hot and cold shower, minibar, and Wi-fi. It also has a lounge area where you can enjoy your coffee or snacks with friends and family.</p>
+    </div>
+    <div class="col-sm-6">
+      <div id="carouselPoolside" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselPoolside" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselPoolside" data-slide-to="1"></li>
+          <li data-target="#carouselPoolside" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/room-poolside1.jpg">
+          </div>
+          <div class="item">
+            <img src="img/room-poolside2.jpg">
+          </div>
+          <div class="item">
+            <img src="img/room-poolside3.jpg">
+          </div>
         </div>
       </div>
-      <div id="3" class="item web col-sm-4 col-md-2 amenities">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-amenities1.jpg">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="carouselSuite" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselSuite" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselSuite" data-slide-to="1"></li>
+          <li data-target="#carouselSuite" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/room-suite1.jpg">
+          </div>
+          <div class="item">
+            <img src="img/room-suite2.jpg">
+          </div>
+          <div class="item">
+            <img src="img/room-suite3.jpg">
+          </div>
         </div>
       </div>
-      <div id="4" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room4.png">
-        </div>
-      </div>
-      <div id="5" class="item web col-sm-4 col-md-2 resort">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-resort4.png">
-        </div>
-      </div>
-      <div id="6" class="item web col-sm-4 col-md-2 resort">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-resort1.png">
-        </div>
-      </div>
-      <div id="7" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room1.png">
-        </div>
-      </div>
-      <div id="8" class="item web col-sm-4 col-md-2 resort">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-resort3.png">
-        </div>
-      </div>
-      <div id="9" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room5.png">
-        </div>
-      </div>
-      <div id="10" class="item web col-sm-4 col-md-2 rooms">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-room3.png">
-        </div>
-      </div>
-      <div id="11" class="item web col-sm-4 col-md-2 amenities">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-amenities4.jpg">
-        </div>
-      </div>
-      <div id="12" class="item web col-sm-4 col-md-2 amenities">
-        <div class="item-wrap">
-          <img class="img-responsive" src="img/gallery-amenities3.jpg">
-        </div>
-      </div>
+    </div>
+    <div class="col-sm-6">
+      <h2>Suite</h2>
+      <p>Our Suite is a private space at the beach recommended for friends who loves the bathing in the sun. It can accommodate 6 to 12 persons. It has all the basic amenities, from T.V., toilet, hot and cold shower, minibar, and Wi-fi. It has a shared living room where you can enjoy your coffee or snacks with friends.</p>
     </div>
   </div>
 </div>
