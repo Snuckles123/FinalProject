@@ -9,7 +9,7 @@
 }
 
 #affix {
-	background-image: url("JAB-logo.png");
+	background-image: url("../img/JAB-logo.png");
 	background-repeat: no-repeat;
 	background-color: white;
 	background-position: center;
@@ -150,7 +150,7 @@
 
 /* Forms Full-width input fields */
 
-#login-form input[type=text], input[type=password] {
+.form-modal input[type=text], input[type=password], input[type=date] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -174,7 +174,7 @@ button:hover {
     opacity: 0.8;
 }
 
-#login-form .container-fluid {
+.form-modal .container-fluid {
     padding: 16px;
 }
 
@@ -183,13 +183,13 @@ span.psw {
     padding-top: 16px;
 }
 
-#login-form form {
+.form-modal form {
 	padding: 16px;
 }
 
 
 /* The Modal (background) */
-#login-form .modal {
+.form-modal .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -204,7 +204,7 @@ span.psw {
 }
 
 /* Modal Content/Box */
-#login-form .modal-content {
+.form-modal .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
@@ -212,7 +212,7 @@ span.psw {
 }
 
 /* Add Zoom Animation */
-#login-form .animate {
+.form-modal .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
