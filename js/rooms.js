@@ -10,4 +10,6 @@ $(document).ready(function() {
 	  allowPageScroll:"vertical"
 
 	});
+
+	$('.parallax-window').parallax({imageSrc: 'img/roomsbanner.jpg'});
 });

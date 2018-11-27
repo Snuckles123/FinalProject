@@ -41,13 +41,21 @@
     height: 500px;
 }
 
-.carousel-caption h3 {
-    color: #fff !important;
-}
-@media (max-width: 600px) {
 .carousel-caption {
-    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    color: #fff !important;
+    top: 35%;
+    bottom: auto;
 }
+
+.carousel-caption h1 {
+    font-size: 100px;
+}
+
+
+@media (max-width: 600px) {
+  .carousel-caption h1 { 
+    font-size: 50px;
+  }
 }
 
 #welcome {

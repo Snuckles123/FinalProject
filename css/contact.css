@@ -1,5 +1,5 @@
 .parallax-window {
-    min-height: 420px;
+    min-height: 300px;
     background: transparent;
     color: white;
     text-align: center;
@@ -9,8 +9,8 @@
 	display: inline-block;
   	vertical-align: middle;
   	line-height: normal;
-  	padding-top: 100px;
-	margin-bottom: 50px;
+  	padding-top: 80px;
+	margin-bottom: 20px;
 }
 
 #contactBody {

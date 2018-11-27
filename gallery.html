@@ -14,8 +14,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="js/parallax.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/validate.js"></script>
+  <script src="js/gallery.js"></script>
+
+
 </head>
 <body>
 
@@ -53,8 +57,15 @@
     </div>
 </nav>
 
-<div id="gallery" class="container" data-js="filtering-demo">
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/gallerybanner.jpg">
   <h1>Gallery</h1>
+  <div>
+    <h3>Browse through our resort with some photos from our guests!</h3>
+  </div>
+</div>
+
+
+<div id="gallery" class="container" data-js="filtering-demo">
   <div id="filters" class="button-group filter-button-group">
     <button class="btn btn-primary" data-filter="*">All</button>
     <button class="btn btn-primary" data-filter=".rooms">Rooms</button>

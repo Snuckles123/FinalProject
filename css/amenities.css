@@ -7,3 +7,18 @@
 h1 {
 	margin-bottom: 30px;
 }
+
+.parallax-window {
+    min-height: 250px;
+    background: transparent;
+    color: white;
+    text-align: center;
+	margin-bottom: 20px;
+}
+
+.parallax-window h1 {
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;
+  	padding-top: 50px;
+}

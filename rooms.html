@@ -16,9 +16,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 
+  <script src="js/parallax.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/validate.js"></script>
   <script src="js/rooms.js"></script>
+
 </head>
 <body>
 
@@ -56,8 +58,14 @@
     </div>
 </nav>
 
-<div id="rooms" class="container-fluid">
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/roomsbanner.jpg">
   <h1>Rooms and Suites</h1>
+  <div>
+    <h3>Explore our rooms and our affordable packages your friends and family will enjoy.</h3>
+  </div>
+</div>
+
+<div id="rooms" class="container-fluid">
   <div class="row">
     <div class="col-sm-6">
       <h2>Superior Room</h2>
