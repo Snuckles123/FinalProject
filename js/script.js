@@ -18,6 +18,8 @@ $( document ).ready(function() {
     var filterValue = $(this).attr('data-filter');
     $container.isotope({ filter: filterValue });
   });
+
+  $('.parallax-window').parallax({imageSrc: 'img/home-special-banner.jpg'});
 });
 
 // Get the modal

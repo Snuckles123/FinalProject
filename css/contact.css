@@ -1,0 +1,57 @@
+.parallax-window {
+    min-height: 420px;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+
+.parallax-window h1 {
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;
+  	padding-top: 100px;
+	margin-bottom: 50px;
+}
+
+#contactBody {
+	padding-top: 45px;
+	padding-bottom: 50px;
+}
+
+#contactBody i {
+	padding-top: 10px;
+}
+
+#contactForm {
+	padding-top: 20px;
+}
+
+/* Forms Full-width input fields */
+
+#contactForm input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#contactForm form {
+	padding: 16px;
+}

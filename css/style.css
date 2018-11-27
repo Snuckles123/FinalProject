@@ -11,7 +11,6 @@
 #affix {
 	background-image: url("../img/JAB-logo.png");
 	background-repeat: no-repeat;
-	background-color: white;
 	background-position: center;
 	background-size: 300px;
 	height: 320px;
@@ -80,10 +79,9 @@
 }
 
 #specialEvent {
-	background-color: #6395F2;
 	padding-left: 100px;
 	padding-right: 100px;
-	padding-top: 20px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 	margin-top: 50px;
 	text-align: center;

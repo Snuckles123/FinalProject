@@ -8,7 +8,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,7 +19,7 @@
   <script src="js/parallax.min.js"></script>
   <script src="js/script.js"></script>
 	<script src="js/validate.js"></script>
-  <script src="js/about.js"></script>
+  <script src="js/contact.js"></script>
 </head>
 <body>
 
@@ -39,11 +41,11 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="rooms.html">Rooms</a></li>
             <li><a href="amenities.html">Amenities</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
           <button class="btn btn-info navbar-btn">BOOK NOW</button>
           <ul class="nav navbar-nav navbar-right">
@@ -55,24 +57,59 @@
     </div>
 </nav>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/aboutbanner.jpg">
-  <h1>About Us</h1>
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/contactbanner.jpg">
+  <h1>Contact Us</h1>
   <div>
-    <h3>Learn why you should stay at JAB Beach Resort on your holidays.</h3>
+    <h3>The JAB Enterprise is here to provide you with more information and answer any questions you may have.</h3>
   </div>
 </div>
 
-<div id="aboutBody"class="container">
-  <h2>JAB Beach Resort</h2>
-  <p>JAB Beach Resort is a 60-hectare “Residential Resort Village” and is the first development in the “Premier Sustainable Coastal Resort Town” of Hamilo Coast. Hamilo Coast is an expansive 5,900 hectare property located in Nasugbu Batangas with 13 coves, a 31 kilometer coastline, rich marine life and abundant flora and fauna. 70 kilometers from Manila it is about 90-minute drive from Mall of Asia via the Cavitex-Ternate-Nasugbu route.</p>
+<div id="contactBody" class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Contacts</h2>
+        <h4>We are in the process of updating our website. Some functions might not be working so it is safe that you contact us at our numbers for your inquiries and reservations.</h4>
+          <i class="fas fa-map-marker-alt fa-lg" >&nbsp;&nbsp;Nasugbu Batangas, Philippines</i>
+          <i class="fas fa-phone fa-lg">&nbsp;&nbsp; 0912-324-6767 | 0967-898-7600 | 0909-101-0101</i>
+          <i class="fas fa-envelope fa-lg">&nbsp;&nbsp;jabbeachresort@gmail.com</i>
+    </div>
+    <div class="col-sm-6">
+      <form id="contactForm">
+        <p>
+          Your Name (required)
+          <br>
+          <span>
+            <input type="text" name="name" 
+            pattern="^([^\d]){2,}$"
+            required>
+          </span>
+        </p>
 
-  <p>JAB Beach Resort offers uniquely designed tropical spacious rooms and suites. Our rooms are entirely furnished and equipped with basic amenities that will give you a feeling of total relaxation! We have all the facilities and services you need for a truly relaxing and enjoyable vacation: friendly receptionists and staffs, a souvenir shop, a koi pond, an entertainment and sports deck, a conference deck, grotto, a cozy restaurant, a chilling poolside bar, a relaxing tree house, swimming pools for adult and kids, a warm pool jacuzzi, and our latest addition, the infinity pool.</p>
+        <p>
+          Your Email (required)
+          <br>
+          <span>
+            <input type="text" name="email" 
+            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
+            required>
+          </span>
+        </p>
 
-  <h2>Why stay at JAB Beach Resort?</h2>
-  <p>Because at JAB Beach Resort, our guests’ satisfaction is always our priority. We take time to listen to feedback and make improvements accordingly. Our resort undergo regular maintenance to make sure that we cater to all our guests’ needs, hassle-free.</p>
-  <p>JAB Beach Resort hospitable staffs are dedicated to provide you with topnotch service that comes from the heart. It’s more tropically fun here!</p>
-  
+        <p>
+          Your Message 
+          <br>
+          <span>
+            <input type="text" name="message" 
+            required>
+          </span>
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </div>
+
+
 
 <div id="login-form" class="form-modal modal">
   <form class="modal-content animate" action="#">
