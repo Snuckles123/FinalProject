@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About</title>
+	<title>BOOK NOW</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/booking.css">
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="js/parallax.min.js"></script>
-  <script src="js/script.js"></script>
+	<script src="js/script.js"></script>
 	<script src="js/validate.js"></script>
-  <script src="js/about.js"></script>
+  <script src="js/gallery.js"></script>
+
+
 </head>
 <body>
 
@@ -39,13 +43,13 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="rooms.html">Rooms</a></li>
             <li><a href="amenities.html">Amenities</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <button class="btn btn-info navbar-btn" onclick="location.href='booking-step1.html'">BOOK NOW</button>
+          <button class="btn btn-info navbar-btn">BOOK NOW</button>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="" data-toggle="modal" data-target="#sign-up-form"><span class="fas fa-user-plus">&nbsp;</span>Sign Up</a></li>
             <li><a href="" data-toggle="modal" data-target="#login-form"><span class="fas fa-sign-in-alt">&nbsp;</span>Login</a></li>
@@ -55,24 +59,93 @@
     </div>
 </nav>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/aboutbanner.jpg">
-  <h1>About Us</h1>
-  <div>
-    <h3>Learn why you should stay at JAB Beach Resort on your holidays.</h3>
-  </div>
+<div id="bookingProgress" class="container">
+  <div class="row bs-wizard" style="border-bottom:0;">
+    <div class="col-xs-3 bs-wizard-step complete">
+      <div class="text-center bs-wizard-stepnum">Step 1</div>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <a href="#" class="bs-wizard-dot"></a>
+      <div class="bs-wizard-info text-center">Select Room</div>
+    </div>
+    
+    <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+      <div class="text-center bs-wizard-stepnum">Step 2</div>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <a href="#" class="bs-wizard-dot"></a>
+      <div class="bs-wizard-info text-center">Guest Information</div>
+    </div>
+    
+    <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+      <div class="text-center bs-wizard-stepnum">Step 3</div>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <a href="#" class="bs-wizard-dot"></a>
+      <div class="bs-wizard-info text-center">Payment Information</div>
+    </div>
+    
+    <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+      <div class="text-center bs-wizard-stepnum">Step 4</div>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <a href="#" class="bs-wizard-dot"></a>
+      <div class="bs-wizard-info text-center">Booking Confirmation</div>
+    </div>
 </div>
-
-<div id="aboutBody"class="container">
-  <h2>JAB Beach Resort</h2>
-  <p>JAB Beach Resort is a 60-hectare “Residential Resort Village” and is the first development in the “Premier Sustainable Coastal Resort Town” of Hamilo Coast. Hamilo Coast is an expansive 5,900 hectare property located in Nasugbu Batangas with 13 coves, a 31 kilometer coastline, rich marine life and abundant flora and fauna. 70 kilometers from Manila it is about 90-minute drive from Mall of Asia via the Cavitex-Ternate-Nasugbu route.</p>
-
-  <p>JAB Beach Resort offers uniquely designed tropical spacious rooms and suites. Our rooms are entirely furnished and equipped with basic amenities that will give you a feeling of total relaxation! We have all the facilities and services you need for a truly relaxing and enjoyable vacation: friendly receptionists and staffs, a souvenir shop, a koi pond, an entertainment and sports deck, a conference deck, grotto, a cozy restaurant, a chilling poolside bar, a relaxing tree house, swimming pools for adult and kids, a warm pool jacuzzi, and our latest addition, the infinity pool.</p>
-
-  <h2>Why stay at JAB Beach Resort?</h2>
-  <p>Because at JAB Beach Resort, our guests’ satisfaction is always our priority. We take time to listen to feedback and make improvements accordingly. Our resort undergo regular maintenance to make sure that we cater to all our guests’ needs, hassle-free.</p>
-  <p>JAB Beach Resort hospitable staffs are dedicated to provide you with topnotch service that comes from the heart. It’s more tropically fun here!</p>
   
 </div>
+
+
+<div id="booking" class="container">
+  <h1>Personal Information</h1>
+  <form class="bookingForm">
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="fname"><b>First Name</b></label>
+          <input type="text" name="fname"
+          pattern="^([^\d]){2,}$" required>
+      </div>
+      <div class="col-sm-6">
+        <label for="lname"><b>Last Name</b></label>
+          <input type="text" name="lname"
+          pattern="^([^\d]){2,}$" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="bday"><b>Birthday</b></label>
+          <input type="date" name="bday">
+      </div>
+      <div class="col-sm-6">
+        <label for="nationality"><b>Nationality</b></label>
+          <input type="text" name="nationality"
+          pattern="^([^\d]){2,}$" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="email"><b>Email Address</b></label>
+          <input type="text" name="email" id="email"
+          value=""
+          pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+          required> 
+      </div>
+      <div class="col-sm-6">
+        <label for="emailRetype"><b>Re-type Email Address</b></label>
+          <input type="text" name="emailRetype" id="emailRetype"
+          value=""
+          pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+          required> 
+      </div>
+    </div>
+    
+    <label for="contactNumber">Contact Number</label>
+      <input type="text" name="contactNumber" id="contactNumber"
+          value=""
+          placeholder="+(639) - 456-78-90" 
+          pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"
+          required>   
+  </form>
+  <button type="submit" onclick="location.href = 'booking-step3.html';">Continue</button>
+</div>
+
 
 <div id="login-form" class="form-modal modal">
   <form class="modal-content animate" action="#">
